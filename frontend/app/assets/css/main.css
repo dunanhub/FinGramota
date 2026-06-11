@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+@import "./legacy/variables.css";
+@import "./legacy/global.css";
+@import "./legacy/app.css";
+@import "./legacy/header.css";
+@import "./legacy/footer.css";
+@import "./legacy/index.css";
+@import "./legacy/auth.css";
+@import "./legacy/CoursesPage.css";
+@import "./legacy/GamifiedPage.css";
+@import "./legacy/InstrumentsPage.css";
+@import "./legacy/LearningPage.css";
+@import "./legacy/MarketplacePage.css";
+@import "./legacy/SosPage.css";
+@import "./legacy/VerificationCenter.css";
+@import "./legacy/profile.css";
+@import "./home.css";
+@import "./faq.css";
+
+@theme {
+  --color-navy: #0d1b5e;
+  --color-navy-dark: #091244;
+  --color-navy-mid: #1a2d7a;
+  --color-gold: #e0c58f;
+  --color-cream: #f7f1e8;
+  --font-display: "Jost", sans-serif;
+  --font-body: "Jost", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+body,
+body *,
+button,
+input,
+textarea,
+select {
+  font-family: "Jost", sans-serif !important;
+}
+
+body:has(.auth-page) {
+  padding-top: 0;
+}
+
+.page-shell {
+  min-height: calc(100vh - 64px);
+}
+
+.site-reveal {
+  opacity: 0;
+  translate: 0 24px;
+  transition:
+    opacity 600ms ease var(--reveal-delay, 0ms),
+    translate 600ms ease var(--reveal-delay, 0ms);
+  will-change: opacity, translate;
+}
+
+.site-reveal.site-reveal--visible {
+  opacity: 1;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-reveal {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr auto;
+    padding-inline: 20px;
+  }
+
+  .footer-content {
+    height: auto;
+    padding: 48px 24px 28px;
+  }
+
+  .site-footer {
+    height: auto;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .brand img {
+    width: 160px;
+  }
+
+  .lang,
+  .icon-btn,
+  .cabinet-btn span {
+    display: none;
+  }
+
+  .cabinet-btn {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,613 @@
+
+/* ── Hero wrapper ───────────────────────────────────────── */
+
+.heroBanner {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(ellipse 60% 80% at 100% 50%, rgba(26, 45, 122, 0.6) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 60% 100%, rgba(9, 18, 68, 0.7) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 20% 0%, rgba(99, 140, 255, 0.2) 0%, transparent 55%),
+    linear-gradient(135deg, #283a83 0%, #4156ab 30%, #4d60a8 35%, #152867 100%);
+}
+
+.heroBanner::before {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.25) 0px,
+    rgba(255, 255, 255, 0.25) 6px,
+    transparent 6px,
+    transparent 14px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgImage {
+  position: absolute;
+  right: 120px;
+  top: 55%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.heroBanner .content {
+  position: relative;
+  z-index: 2;
+  width: 52%;
+  max-width: 760px;
+  padding: 78px 48px 78px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.heroBanner .title {
+  font-size: clamp(42px, 4.2vw, 64px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.heroBanner .sub {
+  max-width: 560px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.heroBanner .inputRow {
+  display: flex;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 7px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 610px;
+}
+
+.heroBanner .input {
+  flex: 1;
+  height: 52px;
+  padding: 0 18px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #ffffff;
+  min-width: 0;
+}
+
+.heroBanner .input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.heroBanner .btn {
+  height: 52px;
+  padding: 0 28px;
+  background: #e1bc66;
+  color: #0d1b5e;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.heroBanner .btn:hover {
+  background: #d7ad50;
+}
+
+/* ── Verification section ───────────────────────────────── */
+
+.section {
+  background: #f5f3ee;
+  padding: 64px 40px 80px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  background: #f5f3ee;
+}
+
+.section .title {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  color: #0d1b5e;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #4a4a6a;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.body {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 20px;
+  box-shadow: 0 2px 12px rgba(13, 27, 94, 0.07);
+}
+
+.sidebarLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d1b5e;
+  margin: 0 0 16px 4px;
+  letter-spacing: 0.01em;
+}
+
+.typeList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.typeBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #f5f3ee;
+  color: #4a4a6a;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.typeBtn:hover {
+  background: #eef2ff;
+  color: #0d1b5e;
+}
+
+.typeBtnActive {
+  background: #0d1b5e;
+  color: #ffffff;
+}
+
+.typeBtnActive:hover {
+  background: #1a2d7a;
+  color: #ffffff;
+}
+
+.typeBtnIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.typeBtn:not(.typeBtnActive) .typeBtnIcon {
+  background: #eef2ff;
+  color: #0d1b5e;
+}
+
+.typeBtnLabel {
+  flex: 1;
+  line-height: 1.3;
+}
+
+.typeBtnArrow {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px 32px 40px;
+  box-shadow: 0 2px 12px rgba(13, 27, 94, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 340px;
+}
+
+.panelTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d1b5e;
+  margin: 0;
+}
+
+.section .inputRow {
+  display: flex;
+  gap: 12px;
+}
+
+.section .input {
+  flex: 1;
+  height: 54px;
+  padding: 0 18px;
+  border: 1.5px solid #e8e6f0;
+  border-radius: 12px;
+  background: #f8f7fc;
+  font-size: 14px;
+  color: #1a1a2e;
+  outline: none;
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.section .input::placeholder {
+  color: #b0aec8;
+  font-size: 13px;
+}
+
+.section .input:focus {
+  border-color: #0d1b5e;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(13, 27, 94, 0.08);
+}
+
+.section .btn {
+  height: 54px;
+  padding: 0 28px;
+  background: #0d1b5e;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.section .btn:hover:not(:disabled) {
+  background: #1a2d7a;
+  transform: translateY(-1px);
+}
+
+.section .btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.section .btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px 0;
+  color: #b0aec8;
+  font-size: 14px;
+}
+
+.emptyState p {
+  margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 860px) {
+  .heroBanner {
+    min-height: auto;
+  }
+
+   .heroBanner .content {
+    padding: 72px 28px;
+    max-width: 100%;
+  }
+
+  .heroBanner .inputRow {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 48px 24px 64px;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+
+  .sidebar {
+    padding: 22px 18px;
+  }
+
+  .typeList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .typeList li {
+    flex: 1 1 calc(50% - 4px);
+  }
+
+  .typeBtnArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroBanner {
+    min-height: unset;
+  }
+
+  .heroBanner .content {
+    padding: 44px 20px;
+  }
+
+  .heroBanner .title {
+    font-size: 28px;
+  }
+
+  .heroBanner .inputRow {
+    flex-direction: column;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: none;
+  }
+
+  .heroBanner .input {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
+  .heroBanner .btn {
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .section {
+    padding: 40px 16px 56px;
+  }
+
+  .panel {
+    padding: 26px 20px 28px;
+  }
+
+  .section .inputRow {
+    flex-direction: column;
+  }
+
+  .section .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .typeList {
+    flex-direction: column;
+  }
+
+  .typeList li {
+    flex: unset;
+  }
+}
+
+/* ── Vigilance trainer banner ───────────────────────────── */
+
+.trainerBanner {
+  background: #ffffff;
+  padding: 64px 40px 72px;
+}
+
+.trainerInner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.trainerHeader {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.trainerTitle {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0d1b5e;
+  margin: 0 0 12px;
+}
+
+.trainerSubtitle {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #0d1b5e;
+  margin: 0 0 22px;
+}
+
+.trainerButton {
+  min-width: 260px;
+  height: 42px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 10px;
+  background: #e1bc66;
+  color: #0d1b5e;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(130, 97, 33, 0.22);
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.trainerButton:hover {
+  background: #d7ad50;
+  transform: translateY(-1px);
+}
+
+.trainerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 56px;
+}
+
+.trainerCard {
+  min-height: 150px;
+  border-radius: 10px;
+  padding: 28px 30px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.trainerCardDark {
+  background: #1f397f;
+  color: #ffffff;
+  border: 1px solid #1f397f;
+  box-shadow: 0 6px 18px rgba(13, 27, 94, 0.1);
+}
+
+.trainerCardLight {
+  background: #ffffff;
+  color: #0d1b5e;
+  border: 1.5px solid #0d1b5e;
+}
+
+.trainerIcon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: currentColor;
+}
+
+.trainerCard h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.trainerCard p {
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 0;
+  opacity: 0.82;
+}
+
+@media (max-width: 860px) {
+  .trainerBanner {
+    padding: 52px 24px 60px;
+  }
+
+  .trainerGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .trainerCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .trainerBanner {
+    padding: 44px 16px 52px;
+  }
+
+  .trainerSubtitle br {
+    display: none;
+  }
+
+  .trainerButton {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .trainerCard {
+    padding: 22px 20px;
+    grid-template-columns: 30px 1fr;
+  }
+
+  .trainerCard h3 {
+    font-size: 14px;
+  }
+}
+
+/* ── Reveal on scroll ─────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.revealFade {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  will-change: opacity;
+}
+
+.revealFadeVisible {
+  opacity: 1;
+}

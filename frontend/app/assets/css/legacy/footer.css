@@ -1,0 +1,88 @@
+.site-footer {
+  width: 100%;
+  height: 396px;
+  background: linear-gradient(100deg, #29489a 0%, #112250 100%);
+  color: #ffffff;
+}
+
+.footer-content {
+  max-width: 1440px;
+  height: 396px;
+  margin: 0 auto;
+  padding: 70px 160px 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 240px 170px 260px 320px;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-brand img {
+  width: 186px;
+  margin-bottom: 18px;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
+.socials {
+  margin-top: 14px;
+  display: flex;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-column h4 {
+  margin: 0 0 22px;
+  color: #e0c58f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+}
+
+.contacts p {
+  margin: 0 0 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.contacts .phone {
+  align-items: center;
+}
+
+.contacts strong {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.55);
+}

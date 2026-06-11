@@ -1,0 +1,480 @@
+.gamified-page,
+.gamified-page * {
+  font-family: "Jost", sans-serif;
+}
+
+.gamified-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+.gamified-hero {
+  width: 100%;
+  height: 763px;
+  background: linear-gradient(
+    110deg,
+    #3d5aa6 25.29%,
+    rgba(41, 72, 154, 0.75) 63.94%,
+    #3d5aa6 93.27%
+  );
+}
+
+.gamified-hero-inner {
+  position: relative;
+  width: 1440px;
+  height: 763px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 130px 83px 0;
+}
+
+.gamified-hero-text h1 {
+  width: 640px;
+  margin: 0 0 27px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.gamified-hero-text p {
+  width: 529px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32.5px;
+}
+
+.gamified-robot {
+  position: absolute;
+  top: 70px;
+  right: 190px;
+  width: 492px;
+  height: 509px;
+  object-fit: contain;
+}
+
+.gamified-progress-card {
+  position: absolute;
+  left: 83px;
+  bottom: 75px;
+  display: flex;
+  width: 1273px;
+  height: 128px;
+  padding: 13.172px 13.172px 1.177px 13.171px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  border: 1.177px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.gamified-progress-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.gamified-progress-top span {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.gamified-progress-top b {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.gamified-progress-line {
+  width: 100%;
+  height: 19px;
+  border-radius: 14px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.gamified-progress-fill {
+  width: 218px;
+  height: 19px;
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, #112250 0%, #1a3a75 100%),
+    #e0c58f;
+  box-shadow:
+    0 10px 15px -3px rgba(17, 34, 80, 0.2),
+    0 4px 6px -4px rgba(17, 34, 80, 0.2);
+}
+
+.gamified-progress-card p {
+  width: 100%;
+  margin: 14px 0 0;
+  color: #f2f2ff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.game-map-section {
+  width: 100%;
+  height: 2207px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.game-map-inner {
+  position: relative;
+  width: 1440px;
+  height: 2207px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.game-map-path {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.map-item {
+  position: absolute;
+  z-index: 3;
+}
+
+.map-circle {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  width: 127.999px;
+  height: 127.999px;
+  padding-right: 0.018px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 39505000px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.map-circle.blue {
+  background: linear-gradient(180deg, #2965ed 37.26%, #2348ad 100%);
+}
+
+.map-circle.green {
+  background: linear-gradient(180deg, #2ce047 0%, #1eb02a 100%);
+}
+
+.map-circle.red {
+  background: linear-gradient(180deg, #ed292c 0%, #ad2325 100%);
+}
+
+.map-circle.gray {
+  background: linear-gradient(0deg, #99a1af 0%, #99a1af 100%);
+}
+
+.map-circle > img {
+  width: 68px;
+  height: 68px;
+}
+
+.level-number {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 5px solid #a855f7;
+  color: #a855f7;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.coin-badge {
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffd230;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.play-badge {
+  position: absolute;
+  right: -18px;
+  bottom: 18px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.play-badge img {
+  width: 23px;
+  height: 23px;
+}
+
+.map-card {
+  position: absolute;
+  top: 18px;
+  width: 280px;
+  max-height: 100px;
+  border-radius: 24px;
+  border: 1.177px solid #f3f4f6;
+  background: #ffffff;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 6;
+}
+
+.map-card.left {
+  right: 155px;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.map-card.right {
+  left: 155px;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.map-card span {
+  color: #106ef7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.map-card h3 {
+  margin: 8px 0 0;
+  color: #112250;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.stars {
+  margin-top: 12px;
+  color: #f5b400;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 4px;
+}
+
+
+.bonus-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.bonus-card {
+  position: relative;
+  width: 1152px;
+  height: 313px;
+  margin: 0 auto;
+
+  border-radius: 24px;
+  border: 0.5px solid #009966;
+
+  background: linear-gradient(
+    90deg,
+    #00de72 0%,
+    #00bd7d 100%
+  );
+
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bonus-circle {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+
+  left: 202px;
+  top: 58px;
+}
+
+.bonus-card h2 {
+  margin-top: 42px;
+
+  color: #fff;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.bonus-subtitle {
+  margin-top: 18px;
+
+  color: #fff;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.bonus-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.bonus-item {
+  width: 179px;
+  height: 82px;
+
+  border-radius: 14px;
+  background: #33da92;
+
+  box-shadow:
+    0 10px 15px -3px rgba(17, 34, 80, 0.2),
+    0 4px 6px -4px rgba(17, 34, 80, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonus-value {
+  color: #fff;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.bonus-gift {
+  color: #fff;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.bonus-label {
+  margin-top: 8px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+/* ===== ПЛАВНОЕ ПОЯВЛЕНИЕ СТРАНИЦЫ ИГР ===== */
+
+@keyframes gameFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Главный экран */
+
+.games-hero-content,
+.games-progress-card,
+.game-map-title,
+.game-map-subtitle,
+.map-item,
+.game-rewards-card {
+  opacity: 0;
+  animation: gameFadeUp 0.8s ease forwards;
+}
+
+/* Задержки */
+
+.games-progress-card {
+  animation-delay: 0.15s;
+}
+
+.map-item:nth-child(1) { animation-delay: 0.10s; }
+.map-item:nth-child(2) { animation-delay: 0.18s; }
+.map-item:nth-child(3) { animation-delay: 0.26s; }
+.map-item:nth-child(4) { animation-delay: 0.34s; }
+.map-item:nth-child(5) { animation-delay: 0.42s; }
+.map-item:nth-child(6) { animation-delay: 0.50s; }
+.map-item:nth-child(7) { animation-delay: 0.58s; }
+.map-item:nth-child(8) { animation-delay: 0.66s; }
+.map-item:nth-child(9) { animation-delay: 0.74s; }
+.map-item:nth-child(10) { animation-delay: 0.82s; }
+
+.game-rewards-card {
+  animation-delay: 0.9s;
+}
+
+
+.map-circle {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.map-circle:hover {
+  transform: scale(1.06);
+
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 25px rgba(41, 101, 237, 0.25);
+}

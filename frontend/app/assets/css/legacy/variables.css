@@ -1,0 +1,80 @@
+/* ─────────────────────────────────────────────
+   Design Tokens — FinGramota
+   Import this file once in main.jsx / index.css
+───────────────────────────────────────────── */
+
+:root {
+  /* Colors */
+  --color-navy:       #0d1b5e;
+  --color-navy-dark:  #091244;
+  --color-navy-mid:   #1a2d7a;
+  --color-navy-light: #2a3f9d;
+  --color-red:        #c0392b;
+  --color-red-dark:   #8b1a1a;
+  --color-green:      #27ae60;
+  --color-gold:       #ffd700;
+  --color-gold-dark:  #b8a430;
+  --color-cream:      #f5f3ee;
+  --color-white:      #ffffff;
+  --color-icon-bg:    #eef2ff;
+
+  /* Text */
+  --color-text-dark:  #1a1a2e;
+  --color-text-mid:   #4a4a6a;
+  --color-text-light: #8888aa;
+
+  /* Borders */
+  --color-border:     #e8e6f0;
+
+  /* Shadows */
+  --shadow-card:      0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover:0 12px 32px rgba(13, 27, 94, 0.13);
+  --shadow-chat:      0 16px 48px rgba(13, 27, 94, 0.3);
+  --shadow-support:   0 8px 32px rgba(192, 57, 43, 0.4);
+
+  /* Typography */
+  --font-display: 'Unbounded', sans-serif;
+  --font-body:    'Golos Text', sans-serif;
+
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   14px;
+  --text-lg:   15px;
+  --text-xl:   16px;
+  --text-2xl:  20px;
+  --text-3xl:  28px;
+  --text-4xl:  42px;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-18: 72px;
+
+  /* Radii */
+  --radius-sm:   8px;
+  --radius-md:   10px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.2s ease;
+  --transition-slow:   0.3s ease;
+
+  /* Layout */
+  --container-sm:  860px;
+  --container-md:  900px;
+  --container-lg:  1000px;
+  --navbar-height: 60px;
+}

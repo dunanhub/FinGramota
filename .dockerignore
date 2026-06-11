@@ -1,0 +1,15 @@
+.git
+.gitignore
+.nuxt
+.output
+node_modules
+arrfr
+backend/app/.env
+backend/app/.venv
+backend/app/__pycache__
+backend/app/staticfiles
+frontend/.env
+frontend/.nuxt
+frontend/.output
+frontend/node_modules
+docker-fingramota/.env

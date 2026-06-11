@@ -1,0 +1,750 @@
+.sos-page {
+  background: #ffffff;
+  color: #112250;
+}
+
+.sos-hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 90px 20px 100px;
+  background: linear-gradient(135deg, #06183f 0%, #112250 55%, #29489a 100%);
+}
+
+.sos-waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.sos-waves path {
+  fill: #ffffff;
+}
+
+.sos-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sos-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  margin-bottom: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sos-hero h1 {
+  max-width: 680px;
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.sos-hero p {
+  margin: 0 0 40px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.sos-section,
+.sos-trust {
+  padding: 90px 52px;
+}
+
+.sos-section.light {
+  background: #f7f1e8;
+}
+
+.sos-section-header {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.sos-section-header h2 {
+  margin: 0 0 14px;
+  color: #112250;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.sos-section-header p {
+  margin: 0;
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sos-grid {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+.sos-support-card,
+.sos-contact-card,
+.sos-doc-card,
+.sos-trust-card,
+.sos-chat {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.sos-support-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 22px;
+  background: linear-gradient(135deg, #b90015, #e52b3d);
+}
+
+.sos-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.sos-icon-wrap {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 16px;
+  background: #112250;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sos-icon-wrap.light {
+  background: rgba(17, 34, 80, 0.08);
+  color: #112250;
+}
+
+.sos-support-card h3,
+.sos-contact-card h3,
+.sos-doc-card h3,
+.sos-trust-card h3 {
+  margin: 0 0 7px;
+  color: #112250;
+  font-size: 22px;
+  line-height: 1.14;
+  font-weight: 900;
+}
+
+.sos-support-card p,
+.sos-contact-card p,
+.sos-doc-card p,
+.sos-trust-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.sos-support-card h3,
+.sos-support-card p,
+.sos-support-card .sos-hours {
+  color: #ffffff;
+}
+
+.sos-hours {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7b8798;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sos-card-actions {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 52px;
+  gap: 12px;
+}
+
+.sos-phone-btn,
+.sos-copy-btn,
+.sos-doc-card button,
+.sos-input-row button {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.sos-phone-btn {
+  height: 48px;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #d0070a;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sos-copy-btn {
+  width: 52px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sos-contact-card {
+  min-height: 205px;
+  padding: 28px;
+  border-radius: 26px;
+  background: #ffffff;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 18px 35px rgba(17, 34, 80, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sos-contacts-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 28px;
+  align-items: stretch;
+}
+
+.sos-contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 46px rgba(17, 34, 80, 0.16);
+}
+
+.sos-contact-card .sos-phone-btn {
+  border: 1.5px solid #5ee18f;
+  background: #ffffff;
+  color: #0b9a4b;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+
+.sos-contact-card .sos-copy-btn {
+  background: #ffffff;
+  border: 1px solid #d8dee8;
+  color: #112250;
+  box-shadow: none;
+}
+
+.sos-contact-card .sos-copy-btn:hover {
+  border-color: #112250;
+  background: #f7f9ff;
+}
+
+.sos-doc-card {
+  min-height: 205px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sos-doc-card button {
+  height: 44px;
+  border-radius: 999px;
+  background: #112250;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sos-agent-section {
+  padding: 95px 52px;
+  background: #ffffff;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sos-agent-copy p {
+  margin: 0 0 12px;
+  color: #29489a;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.sos-agent-copy h2 {
+  margin: 0 0 18px;
+  color: #112250;
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.sos-agent-copy span {
+  display: block;
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.sos-agent-copy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.sos-agent-copy li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #112250;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sos-agent-copy li svg {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #112250;
+  color: #ffffff;
+}
+
+.sos-chat {
+  overflow: hidden;
+  border: 1px solid #eef0f4;
+}
+
+.sos-chat-header {
+  padding: 18px 20px;
+  background: #112250;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sos-bot-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sos-chat-header b {
+  display: block;
+  font-size: 17px;
+}
+
+.sos-chat-header span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+
+.sos-messages {
+  height: 310px;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sos-message-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sos-message-row.user {
+  align-items: flex-end;
+}
+
+.sos-message-row.agent {
+  align-items: flex-start;
+}
+
+.sos-bubble {
+  max-width: 78%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #112250;
+  font-size: 15px;
+  line-height: 1.45;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.sos-message-row.user .sos-bubble {
+  background: #112250;
+  color: #ffffff;
+}
+
+.sos-message-row small {
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+.sos-input-row {
+  padding: 16px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #eef0f4;
+}
+
+.sos-input-row input {
+  flex: 1;
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid #d9deea;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.sos-input-row button {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #112250;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sos-input-row button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sos-trust {
+  background: #f7f1e8;
+  text-align: center;
+}
+
+.sos-top-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 18px;
+  border-radius: 28px;
+  background: #ffffff;
+  color: #112250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 30px rgba(17, 34, 80, 0.08);
+}
+
+.sos-trust-card {
+  min-height: 205px;
+  padding: 34px 24px;
+  text-align: center;
+}
+
+.sos-trust-card .sos-icon-wrap {
+  margin: 0 auto 16px;
+}
+
+@media (max-width: 1180px) {
+  .sos-agent-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .sos-section,
+  .sos-agent-section,
+  .sos-trust {
+    padding: 60px 16px;
+  }
+
+  .sos-hero {
+    padding: 70px 16px 80px;
+  }
+
+  .sos-hero h1 {
+    font-size: 32px;
+  }
+
+  .sos-hero p {
+    font-size: 16px;
+  }
+
+  .sos-section-header h2,
+  .sos-agent-copy h2 {
+    font-size: 34px;
+  }
+
+  .sos-card-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .sos-copy-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .sos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .sos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1180px) {
+  .sos-contacts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .sos-contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sos-support-card {
+  animation: sosSupportFloat 4s ease-in-out infinite;
+}
+
+.sos-support-card .sos-icon-wrap {
+  animation: sosIconPulse 2.4s ease-in-out infinite;
+}
+
+.sos-support-card .sos-phone-btn {
+  animation: sosPhoneGlow 2.2s ease-in-out infinite;
+}
+
+.sos-support-card .sos-copy-btn {
+  transition: 0.25s ease;
+}
+
+.sos-support-card .sos-copy-btn:hover {
+  transform: scale(1.08);
+}
+
+@keyframes sosSupportFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sosIconPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.12);
+  }
+}
+
+@keyframes sosPhoneGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.45);
+  }
+}
+
+.sos-doc-card button {
+  height: 44px;
+  border-radius: 999px;
+  background: #112250;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.sos-doc-card button:hover {
+  transform: translateY(-3px) scale(1.02);
+
+  background: #1b3275;
+
+  box-shadow:
+    0 12px 28px rgba(17, 34, 80, 0.35),
+    0 0 22px rgba(33, 69, 170, 0.22);
+}
+
+.sos-doc-card button:active {
+  transform: scale(0.98);
+}
+
+.sos-trust-card {
+  position: relative;
+
+  min-height: 205px;
+  padding: 34px 24px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(17, 34, 80, 0.06);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.sos-trust-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(17, 34, 80, 0.08),
+      transparent 60%
+    );
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+}
+
+.sos-trust-card:hover {
+  transform:
+    translateY(-10px)
+    scale(1.02);
+
+  border-color: rgba(17, 34, 80, 0.12);
+
+  box-shadow:
+    0 28px 55px rgba(17, 34, 80, 0.16),
+    0 10px 24px rgba(17, 34, 80, 0.08);
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8faff 100%
+  );
+}
+
+.sos-trust-card:hover::before {
+  opacity: 1;
+}
+
+.sos-trust-card:hover .sos-icon-wrap {
+  transform:
+    scale(1.08)
+    rotate(-4deg);
+
+  background: #112250;
+  color: #ffffff;
+
+  box-shadow:
+    0 14px 30px rgba(17, 34, 80, 0.22);
+}
+
+.sos-trust-card:hover h3 {
+  transform: translateY(-2px);
+
+  color: #081b56;
+}
+
+.sos-trust-card:hover p {
+  color: #4f628d;
+}
+
+.sos-trust-card .sos-icon-wrap {
+  margin: 0 auto 16px;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.sos-trust-card h3 {
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+}
+
+.sos-trust-card p {
+  transition: color 0.35s ease;
+}

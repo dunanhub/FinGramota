@@ -36,6 +36,10 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER:-fingramota}:${POSTGRES_PASSWORD:-fingramota-dev-password}@postgres:5432/${POSTGRES_DB:-fingramota}
       CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:3000}
       CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS:-http://localhost:3000}
+      DATA_EGOV_BASE_URL: ${DATA_EGOV_BASE_URL:-https://data.egov.kz}
+      DATA_EGOV_API_KEY: ${DATA_EGOV_API_KEY:-}
+      DATA_EGOV_TIMEOUT: ${DATA_EGOV_TIMEOUT:-10}
+      DATA_EGOV_RATE_LIMIT: ${DATA_EGOV_RATE_LIMIT:-35}
     command:
       - /bin/sh
       - -c

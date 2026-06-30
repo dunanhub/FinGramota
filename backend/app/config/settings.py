@@ -1,3 +1,4 @@
+from datetime import timedelta
 from pathlib import Path
 
 import environ
@@ -25,6 +26,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "corsheaders",
     "rest_framework",
+    "drf_spectacular",
+    "rest_framework_simplejwt.token_blacklist",
+    "users.apps.UsersConfig",
+    "verification.apps.VerificationConfig",
 ]
 
 MIDDLEWARE = [
@@ -65,6 +70,8 @@ DATABASES = {
         default="postgresql://fingramota:fingramota@postgres:5432/fingramota",
     )
 }
+
+AUTH_USER_MODEL = "users.User"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -112,4 +119,28 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.AllowAny",
     ],
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ROTATE_REFRESH_TOKENS": True,
+    "BLACKLIST_AFTER_ROTATION": True,
+    "AUTH_HEADER_TYPES": ("Bearer",),
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "FinGramota API",
+    "DESCRIPTION": "Authentication, user profile, and organization verification API.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+}
+
+DATA_EGOV_BASE_URL = env("DATA_EGOV_BASE_URL", default="https://data.egov.kz")
+DATA_EGOV_API_KEY = env("DATA_EGOV_API_KEY", default="")
+DATA_EGOV_TIMEOUT = env.float("DATA_EGOV_TIMEOUT", default=10)
+DATA_EGOV_RATE_LIMIT = env.int("DATA_EGOV_RATE_LIMIT", default=35)

@@ -15,4 +15,5 @@ urlpatterns = [
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
     path("", include("users.urls")),
     path("", include("verification.urls")),
+    path("", include("marketplace.urls")),
 ]

@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "users.apps.UsersConfig",
     "verification.apps.VerificationConfig",
+    "marketplace.apps.MarketplaceConfig",
 ]
 
 MIDDLEWARE = [

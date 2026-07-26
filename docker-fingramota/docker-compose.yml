@@ -102,7 +102,6 @@ services:
 networks:
   backend:
   frontend:
-    internal: true
   database:
     internal: true
 

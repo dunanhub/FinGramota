@@ -1,0 +1,11 @@
+{
+  "name": "fingramota-vbr-capture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node capture.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.54.1"
+  }
+}
